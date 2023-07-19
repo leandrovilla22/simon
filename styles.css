@@ -74,6 +74,6 @@ label {
   display: block;
   margin: 20px auto;
 }
-.iluminado {
+.active {
   box-shadow: 0 0 50px rgb(178, 238, 182);
 }

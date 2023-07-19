@@ -26,15 +26,7 @@ function nameJugador(){
     startGame();
   }
 }
-//cambiar color
-function cambiaColor(){
- sequence.forEach(cuadrado => {
-  cuadrado.classList.add("iluminado")
-  setTimeout(() => {
-    cuadrado.classList.remove("iluminado")
-  }, 500);
- });
-}
+
 
 // Start the game
 function startGame() {
@@ -55,7 +47,7 @@ function generateSequence() {
 
     var randomNum = Math.floor(Math.random() * 4);
     sequence.push(randomNum);
-    cambiaColor();
+    //cambiaColor();
 //  }
   console.log('level' , level, 'sequence', sequence);
 }
