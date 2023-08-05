@@ -20,26 +20,26 @@
         <form id="formulario">
             <div class="columna">
             <label> Nombre:</label>
-            <input type="text" id="nombre" placeholder="Nombre">
-            <span id="nombre-error" class="error-text"></span>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            
             </div>
             <div>
             <label> Email:</label>
-            <input type="text" id="email" placeholder="Email">
-            <span id="email-error" class="error-text"></span>
+            <input type="text" id="correo" placeholder="Email" required>
+           
             </div>
         
             <div class="columna">
                 <label> Comentario:</label><br>
             <textarea name="comment" id="textarea" cols="50" rows="30"></textarea>
             
-            <span id="textarea-error" class="error-text"></span>
+           
             </div>
         
-            <button href="mailto:leandrovilla22@gmail.com">Enviar</button>
+            <button onclick="validarFormulario()">Enviar</button>
         </form>
     </div> 
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

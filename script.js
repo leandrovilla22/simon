@@ -184,3 +184,28 @@ function calculateTimer() {
   watch.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
+//Funciones para el Formulario
+function validarFormulario() {
+  var nombre = document.getElementById('nombre').value;
+  var email = document.getElementById('correo').value;
+  var comentario = document.getElementById('textarea').value;
+
+  var nombreValido = /^[A-Za-z\s]+$/.test(nombre);
+  var emailValido = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
+
+  var destinatario ="leandrovilla22@gmail.com";
+  var asunto = "Consulta desde el formulario de la página";
+  var mailtoLink = "mailto:" + destinatario + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(comentario);
+
+  if (!nombreValido) {
+    alert('Ingrese un nombre válido (solo letras y espacios)');
+    return false;
+} else if (!emailValido) {
+    alert('Ingrese un email válido');
+    return false;
+} else {
+    // Si el formulario es válido, redirigir el navegador hacia el enlace mailto
+    window.location.href = mailtoLink;
+    return true;
+}
+}
