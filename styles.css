@@ -1,21 +1,41 @@
+@media (min-width: 768px) {
 body {
   background-color:grey;
+  
 }
 h1 {
   text-align: center;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
   color: cornsilk;
-
+  
+}
+#namePlayer{
+  margin-left: 10px;
 }
 .Titulo {
-  width: 100px;
+  width: 50%;
+  display: flex;
   border: 1px;
+  margin-left: 30%;
+  margin-right:auto;
+  font-size: 30px;
+}
+.timer {
+  
+  background-color: black;
+  text-align: center;
+  font-size: x-large; 
+  color:white;
+  width: 150px;
+  height: 30px;
+  margin-left: auto;
+  margin-right:30%;
 }
 .simon-board {
   width: 600px;
   height: 600px;
-  margin: 20px auto;
+  margin: 2.5% 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -38,8 +58,6 @@ label {
   margin-top: 7%;
   margin-left: 7%;
   
-  
-    
 }
 
 #red {
@@ -49,7 +67,6 @@ label {
   width: 90%;
   margin-top: 7%;
   margin-left: 2%;
-
   }
 
 #yellow {
@@ -69,11 +86,75 @@ label {
   margin-top: 3%;
   margin-left: 2%;
 }
-
-#start-btn {
-  display: block;
-  margin: 20px auto;
+.start-btn1 {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 49%;
 }
+
+#start-btn{
+  font-size: 30px;
+  background-color:wheat;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+}
+
 .active {
   box-shadow: 0 0 50px rgb(178, 238, 182);
+}
+.CuerpoPadre{
+  display: inline-flex;
+  width:100%;
+}
+.Cuerpo {
+  background-color: rgb(33, 62, 52);
+  width: 20%;
+  height: 400px;
+  margin-left: 3%;
+  margin-top: 8%;
+  text-align: center;
+  
+}
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+
+}
+/* Estilos para WEB de formulario*/
+.formCenter{
+  display: flex;
+  width: 500px;
+  background-color: rgb(28, 27, 27);
+  align-items: center;
+  justify-content: center;
+  margin:5% auto;
+  border-radius: 10%;
+}
+
+.form {
+  width:50vh;
+}
+#formulario{
+  border: 2px;
+  color: azure;
+  font-size: 20px;
+  display: block;
+}
+#formulario button{
+  border: 2px;
+  display: flex;
+  margin:5% auto;
+}
+#formulario div{
+  align-items: center;
+  margin:5% 10%;
+
+}
+/*Estilo responsive */
+
 }

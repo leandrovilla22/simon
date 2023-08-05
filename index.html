@@ -4,30 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simon</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">   
+  <link rel="stylesheet" href="stylesmall.css" type="text/css">  
   <link rel="stylesheet" src="styles.css" type="text/css">
-  <link rel="stylesheet" href="styles.css" type="text/css">
- <script src="script.js"></script>
- 
+
 </head>
 <body>
-  <!--<div class="Titulo">-->
-    <h1>Simon</h1>
-    <label for="nameJugador">Nombre:</label>
-    <input type="text" id="nameJugador">
-    
+  <h1>Simon</h1>
+  <div class="Titulo" >
+    <div id="inline">
+    <label for="namePlayer">Nombre:</label>
+    <input type="text" id="namePlayer">
+  </div>
+    <div class="timer">
+    <div id="watch">00:00</div>
+    </div>
+ </div>
 
- <!-- </div>-->
-   
+ <div class="start-btn1">
+  <button id="start-btn" onclick="namePlayer()">Start</button>
+ </div>
+  <div class="CuerpoPadre">
+  <div class="Cuerpo">
+    <h2><u>Puntuaciones</u></h2>
+      <form action="">
+    <label for="">Nombre</label>
+    <label for="">NIVEL</label>
+    <label for="">Puntaje:</label>
+      </form>
+      <input type="text" id="NOMBRE">
+      <input type="text" id="NIVEL">
+      <input type="text" id="PUNTAJE">
+  </div>
   <div class="simon-board">
     <div id="green" class="simon-btn"> <p></p> </div>
     <div id="red" class="simon-btn"> </div>
     <div id="yellow" class="simon-btn"> </div>
     <div id="blue" class="simon-btn"> </div>
   </div>
-  <button id="star-tbtn" onclick="nameJugador()">Start</button>
 
-   
-  </script> 
+</div>
+
+<div class="footer">
+  <a href="https://leandrovilla22.github.io/simon/">GitHub Page</a>
+  
+  <a href="https://github.com/leandrovilla22/simon.git">GitHub Repository</a>
+  
+  <a href="formulario.html">Contacto</a>
+
+</div>
+  <script src="script.js"></script>
+
   
 </body>
 </html>
