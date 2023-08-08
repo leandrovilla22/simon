@@ -1,19 +1,17 @@
 @media (min-width: 768px) {
 body {
-  background-color:grey;
-  
+  background-color:grey;  
 }
 h1 {
   text-align: center;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
-  color: cornsilk;
-  
+  color: cornsilk;  
 }
 #namePlayer{
   margin-left: 10px;
 }
-.Titulo {
+.title {
   width: 50%;
   display: flex;
   border: 1px;
@@ -21,8 +19,7 @@ h1 {
   margin-right:auto;
   font-size: 30px;
 }
-.timer {
-  
+.timer {  
   background-color: black;
   text-align: center;
   font-size: x-large; 
@@ -32,7 +29,7 @@ h1 {
   margin-left: auto;
   margin-right:30%;
 }
-.simon-board {
+.simonBoard{
   width: 600px;
   height: 600px;
   margin: 2.5% 10%;
@@ -43,8 +40,7 @@ h1 {
   border-radius:50%;
   background-color: black;
 }
-
-.simon-btn {
+.simonBtn{
   cursor: pointer;
 }
 label {
@@ -56,74 +52,65 @@ label {
   height: 90%;
   width: 90%;
   margin-top: 7%;
-  margin-left: 7%;
-  
+  margin-left: 7%; 
 }
-
 #red {
   background-color: red;
-    border-top-right-radius: 100%;
+  border-top-right-radius: 100%;
   height: 90%;
   width: 90%;
   margin-top: 7%;
   margin-left: 2%;
-  }
-
+}
 #yellow {
   background-color: yellow;
-    border-bottom-left-radius: 100%;
-    height: 90%;
+  border-bottom-left-radius: 100%;
+  height: 90%;
   width: 90%;
   margin-top: 3%;
   margin-left: 7%;
 }
-
 #blue {
   background-color: blue;
-    border-bottom-right-radius: 100%;
-    height: 90%;
+  border-bottom-right-radius: 100%;
+  height: 90%;
   width: 90%;
   margin-top: 3%;
   margin-left: 2%;
 }
-.start-btn1 {
+.startBtn1 {
   width: 100%;
   margin-top: 30px;
   margin-left: 49%;
 }
-
-#start-btn{
+#startBtn{
   font-size: 30px;
   background-color:wheat;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   justify-content: center;
 }
-
 .active {
   box-shadow: 0 0 50px rgb(178, 238, 182);
 }
-.CuerpoPadre{
+.fatherBody{
   display: inline-flex;
   width:100%;
 }
-.Cuerpo {
+.pointList{
   background-color: rgb(33, 62, 52);
   width: 20%;
   height: 400px;
   margin-left: 3%;
   margin-top: 8%;
-  text-align: center;
-  
+  text-align: center; 
 }
 .footer {
   text-align: center;
 }
-
 .footer a {
   display: inline-block;
   margin: 10px;
   font-size: 20px;
-
 }
 /* Estilos para WEB de formulario*/
 .formCenter{
@@ -135,26 +122,22 @@ label {
   margin:5% auto;
   border-radius: 10%;
 }
-
 .form {
   width:50vh;
 }
-#formulario{
+#mediumForm{
   border: 2px;
   color: azure;
   font-size: 20px;
   display: block;
 }
-#formulario button{
+#mediumForm button{
   border: 2px;
   display: flex;
   margin:5% auto;
 }
-#formulario div{
+#mediumForm div{
   align-items: center;
   margin:5% 10%;
-
 }
-/*Estilo responsive */
-
 }
