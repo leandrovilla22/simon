@@ -15,20 +15,20 @@ var runingTime= 0;
 
 // Button click event listeners
 function clicksecuencia(){
-for (var h = 0; h < buttonElements.length; h++){
-  buttonElements[h].addEventListener('click', handleButtonClick);  
-}
+  for (var h = 0; h < buttonElements.length; h++){
+    buttonElements[h].addEventListener('click', handleButtonClick);  
+  }
 }
 function namePlayer(){
   var namePlayer1 = document.getElementById('namePlayer').value;
-  console.log(namePlayer1)
-  if (namePlayer1===''){
-    alert('Ingrese su nombre');
-  }
-  else{
-    startGame();
-    startTimer(); // Iniciar el cronómetro al comenzar el juego    
-  }
+    console.log(namePlayer1)
+    if (namePlayer1===''){
+      alert('Ingrese su nombre');
+    }
+    else{
+      startGame();
+      startTimer(); // Iniciar el cronómetro al comenzar el juego    
+    }
 }
 // Start the game
 function startGame(){
@@ -95,9 +95,7 @@ function playButton(buttonIndex){
 // Check player's sequence
 function checkPlayerSequence(){
   console.log('checkPlayerSequence', playerSequence);
-  
   if (playerSequence.length === sequence.length){
-    
     if (arraysMatch(playerSequence, sequence)){
       playerSequence = [];
       jugador = document.getElementById('namePlayer').value;
@@ -105,28 +103,27 @@ function checkPlayerSequence(){
       console.log('Siguiente Nivel');
       generateSequence();
         setTimeout(function(){
-        console.log('comienza el nivel' , level);
-        playSequence();
-      }, 1000);
+          console.log('comienza el nivel' , level);
+          playSequence();
+        }, 1000);
     } else {
-      if (strictMode){
-        alert('Game Over!');
-        startGame();
-      } else {
+        if (strictMode){
+          alert('Game Over!');
+          startGame();
+        } else {
         //console.log(point);
         //stopTimer();
         //alert('Reintentalo '+ jugador + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
-        var continueGame = confirm('¡Incorrecto! ¿Deseas continuar?');
-        if (continueGame){
-          playerSequence = [];
-        setTimeout(function(){
-        playSequence();
-        }, 1000);
-        } else {
-          stopTimer();
-          alert('Reintentalo '+ jugador + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
-          
-        }
+          var continueGame = confirm('¡Incorrecto! ¿Deseas continuar?');
+          if (continueGame){
+            playerSequence = [];
+            setTimeout(function(){
+            playSequence();
+            }, 1000);
+          } else {
+            stopTimer();
+            alert('Reintentalo '+ jugador + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
+          }
       }
     }
   }
@@ -169,21 +166,19 @@ function calculateTimer(){
 }
 //Funciones para el Formulario
 function validateForm(){
-  var nombre = document.getElementById('nameForm').value;
+  var name = document.getElementById('nameForm').value;
   var email = document.getElementById('validateEmail').value;
-  var comentario = document.getElementById('textArea').value;
-
-  var nombreValido = /^[A-Za-z\s]+$/.test(nombre);
-  var emailValido = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
-
+  var coment = document.getElementById('textArea').value;
+  var validName = /^[A-Za-z\s]+$/.test(name);
+  var emailValid = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
   var destinatario ='leandrovilla22@gmail.com';
-  var asunto = 'Consulta desde el formulario de la página';
-  var mailtoLink = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(comentario);
+  var affair = 'Consulta desde el formulario de la página';
+  var mailtoLink = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(affair) + '&body=' + encodeURIComponent(coment);
 
-  if (!nombreValido){
+  if (!validName){
     alert('Ingrese un nombre válido (solo varras y espacios)');
     return false;
-} else if (!emailValido){
+} else if (!emailValid){
     alert('Ingrese un email válido');
     return false;
 } else {
