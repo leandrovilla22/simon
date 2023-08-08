@@ -1,3 +1,4 @@
+'use strict';
 // Variables
 var sequence = [];
 var playerSequence = [];
@@ -7,22 +8,22 @@ var buttonsDisabled = true;
 var strictMode = false;
 var buttonElements =null;
 //var startButton = document.getElementById('startBtn');
-const timer = document.getElementsByClassName('timer');
-const watch = document.getElementById('watch');
-let timerInterval;
-let runingTime= 0;
+var timer = document.getElementsByClassName('timer');
+var watch = document.getElementById('watch');
+var timerInterval;
+var runingTime= 0;
 
 // Button click event listeners
 function clicksecuencia(){
-for (let h = 0; h < buttonElements.length; h++){
+for (var h = 0; h < buttonElements.length; h++){
   buttonElements[h].addEventListener('click', handleButtonClick);  
 }
 }
 function namePlayer(){
-  let namePlayer1 = document.getElementById('namePlayer').value
+  var namePlayer1 = document.getElementById('namePlayer').value;
   console.log(namePlayer1)
   if (namePlayer1===''){
-    alert('Ingrese su nombre')
+    alert('Ingrese su nombre');
   }
   else{
     startGame();
@@ -48,7 +49,7 @@ function generateSequence(){
 }
 // Play the sequence
 function playSequence(){
-  let i = 0; 
+  var i = 0; 
   var interval = setInterval(function(){
     playButton(sequence[i]);
     i++;
@@ -93,18 +94,18 @@ function playButton(buttonIndex){
 }
 // Check player's sequence
 function checkPlayerSequence(){
-  console.log('checkPlayerSequence', playerSequence)
+  console.log('checkPlayerSequence', playerSequence);
   
   if (playerSequence.length === sequence.length){
     
     if (arraysMatch(playerSequence, sequence)){
       playerSequence = [];
-      jugador = document.getElementById('namePlayer').value
+      jugador = document.getElementById('namePlayer').value;
       level++;
-      console.log('Siguiente Nivel')
+      console.log('Siguiente Nivel');
       generateSequence();
         setTimeout(function(){
-        console.log('comienza el nivel' , level)
+        console.log('comienza el nivel' , level);
         playSequence();
       }, 1000);
     } else {
@@ -115,7 +116,7 @@ function checkPlayerSequence(){
         //console.log(point);
         //stopTimer();
         //alert('Reintentalo '+ jugador + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
-        const continueGame = confirm('¡Incorrecto! ¿Deseas continuar?');
+        var continueGame = confirm('¡Incorrecto! ¿Deseas continuar?');
         if (continueGame){
           playerSequence = [];
         setTimeout(function(){
@@ -161,9 +162,9 @@ function stopTimer(){
 }
 // Actualizar el cronómetro en el reloj
 function calculateTimer(){
-  const totalSeconds = Math.floor(runingTime / 1000);
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = totalSeconds % 60;
+  var totalSeconds = Math.floor(runingTime / 1000);
+  var minutes = Math.floor(totalSeconds / 60);
+  var seconds = totalSeconds % 60;
   watch.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 //Funciones para el Formulario
@@ -175,12 +176,12 @@ function validateForm(){
   var nombreValido = /^[A-Za-z\s]+$/.test(nombre);
   var emailValido = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
 
-  var destinatario ="leandrovilla22@gmail.com";
-  var asunto = "Consulta desde el formulario de la página";
-  var mailtoLink = "mailto:" + destinatario + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(comentario);
+  var destinatario ='leandrovilla22@gmail.com';
+  var asunto = 'Consulta desde el formulario de la página';
+  var mailtoLink = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(comentario);
 
   if (!nombreValido){
-    alert('Ingrese un nombre válido (solo letras y espacios)');
+    alert('Ingrese un nombre válido (solo varras y espacios)');
     return false;
 } else if (!emailValido){
     alert('Ingrese un email válido');
