@@ -1,143 +1,143 @@
 @media (min-width: 768px) {
-body {
-  background-color:grey;  
-}
-h1 {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
-  color: cornsilk;  
-}
-#namePlayer{
-  margin-left: 10px;
-}
-.title {
-  width: 50%;
-  display: flex;
-  border: 1px;
-  margin-left: 30%;
-  margin-right:auto;
-  font-size: 30px;
-}
-.timer {  
-  background-color: black;
-  text-align: center;
-  font-size: x-large; 
-  color:white;
-  width: 150px;
-  height: 30px;
-  margin-left: auto;
-  margin-right:30%;
-}
-.simonBoard{
-  width: 600px;
-  height: 600px;
-  margin: 2.5% 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-  border-radius:50%;
-  background-color: black;
-}
-.simonBtn{
-  cursor: pointer;
-}
-label {
-  align-content: center;
-}
-#green {
-  background-color: green;
-  border-top-left-radius: 100%;
-  height: 90%;
-  width: 90%;
-  margin-top: 7%;
-  margin-left: 7%; 
-}
-#red {
-  background-color: red;
-  border-top-right-radius: 100%;
-  height: 90%;
-  width: 90%;
-  margin-top: 7%;
-  margin-left: 2%;
-}
-#yellow {
-  background-color: yellow;
-  border-bottom-left-radius: 100%;
-  height: 90%;
-  width: 90%;
-  margin-top: 3%;
-  margin-left: 7%;
-}
-#blue {
-  background-color: blue;
-  border-bottom-right-radius: 100%;
-  height: 90%;
-  width: 90%;
-  margin-top: 3%;
-  margin-left: 2%;
-}
-.startBtn1 {
-  width: 100%;
-  margin-top: 30px;
-  margin-left: 49%;
-}
-#startBtn{
-  font-size: 30px;
-  background-color:wheat;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  justify-content: center;
-}
-.active {
-  box-shadow: 0 0 50px rgb(178, 238, 182);
-}
-.fatherBody{
-  display: inline-flex;
-  width:100%;
-}
-.pointList{
-  background-color: rgb(33, 62, 52);
-  width: 20%;
-  height: 400px;
-  margin-left: 3%;
-  margin-top: 8%;
-  text-align: center; 
-}
-.footer {
-  text-align: center;
-}
-.footer a {
-  display: inline-block;
-  margin: 10px;
-  font-size: 20px;
-}
-/* Estilos para WEB de formulario*/
-.formCenter{
-  display: flex;
-  width: 500px;
-  background-color: rgb(28, 27, 27);
-  align-items: center;
-  justify-content: center;
-  margin:5% auto;
-  border-radius: 10%;
-}
-.form {
-  width:50vh;
-}
-#mediumForm{
-  border: 2px;
-  color: azure;
-  font-size: 20px;
-  display: block;
-}
-#mediumForm button{
-  border: 2px;
-  display: flex;
-  margin:5% auto;
-}
-#mediumForm div{
-  align-items: center;
-  margin:5% 10%;
-}
+  body {
+    background-color: rgb(128, 128, 128);
+  }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 248, 220);
+  }
+  #namePlayer {
+    margin-left: 10px;
+  }
+  .title {
+    width: 50%;
+    display: flex;
+    border: 1px;
+    margin-left: 30%;
+    margin-right: auto;
+    font-size: 30px;
+  }
+  .timer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 30%;
+  }
+  .simonBoard {
+    width: 600px;
+    height: 600px;
+    margin: 2.5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+  }
+  .simonBtn {
+    cursor: pointer;
+  }
+  label {
+    align-content: center;
+  }
+  #green {
+    background-color: rgb(0, 128, 0);
+    border-top-left-radius: 100%;
+    height: 90%;
+    width: 90%;
+    margin-top: 7%;
+    margin-left: 7%;
+  }
+  #red {
+    background-color: rgb(255, 0, 0);
+    border-top-right-radius: 100%;
+    height: 90%;
+    width: 90%;
+    margin-top: 7%;
+    margin-left: 2%;
+  }
+  #yellow {
+    background-color: rgb(255, 255, 0);
+    border-bottom-left-radius: 100%;
+    height: 90%;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 7%;
+  }
+  #blue {
+    background-color: rgb(0, 0, 255);
+    border-bottom-right-radius: 100%;
+    height: 90%;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+  .startBtn1 {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 49%;
+  }
+  #startBtn {
+    font-size: 30px;
+    background-color: rgb(245, 222, 179);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+  }
+  .active {
+    box-shadow: 0 0 50px rgb(178, 238, 182);
+  }
+  .fatherBody {
+    display: inline-flex;
+    width: 100%;
+  }
+  .pointList {
+    background-color: rgb(33, 62, 52);
+    width: 20%;
+    height: 400px;
+    margin-left: 3%;
+    margin-top: 8%;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+  }
+  /* Estilos para WEB de formulario*/
+  .formCenter {
+    display: flex;
+    width: 500px;
+    background-color: rgb(28, 27, 27);
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    border-radius: 10%;
+  }
+  .form {
+    width: 50vh;
+  }
+  #mediumForm {
+    border: 2px;
+    color: rgb(240, 255, 255);
+    font-size: 20px;
+    display: block;
+  }
+  #mediumForm button {
+    border: 2px;
+    display: flex;
+    margin: 5% auto;
+  }
+  #mediumForm div {
+    align-items: center;
+    margin: 5% 10%;
+  }
 }
