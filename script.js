@@ -11,8 +11,8 @@ var buttonElements =null;
 var timer = document.getElementsByClassName('timer');
 var watch = document.getElementById('watch');
 var timerInterval;
-var runingTime= 0;
-
+var runingTime= 0; 
+var namePlayer1= '';
 // Button click event listeners
 function clicksecuencia(){
   for (var h = 0; h < buttonElements.length; h++){
@@ -20,7 +20,7 @@ function clicksecuencia(){
   }
 }
 function namePlayer(){
-  var namePlayer1 = document.getElementById('namePlayer').value;
+  namePlayer1 = document.getElementById('namePlayer').value;
     console.log(namePlayer1)
     if (namePlayer1===''){
       alert('Ingrese su nombre');
@@ -98,7 +98,6 @@ function checkPlayerSequence(){
   if (playerSequence.length === sequence.length){
     if (arraysMatch(playerSequence, sequence)){
       playerSequence = [];
-      jugador = document.getElementById('namePlayer').value;
       level++;
       console.log('Siguiente Nivel');
       generateSequence();
@@ -122,7 +121,7 @@ function checkPlayerSequence(){
             }, 1000);
           } else {
             stopTimer();
-            alert('Reintentalo '+ jugador + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
+            alert('Reintentalo '+ namePlayer1 + ' estas en el Nivel'+ level +' tu puntuacion actual es:' + point );
           }
       }
     }
