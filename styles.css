@@ -8,9 +8,9 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 248, 220);
   }
-  #namePlayer {
-    margin-left: 10px;
-  }
+  label {
+    align-content: center;
+  }  
   .title {
     width: 50%;
     display: flex;
@@ -45,8 +45,45 @@
     width: 590px;
     height: 590px;
   }
-  label {
-    align-content: center;
+  .formCenter {
+    display: flex;
+    width: 500px;
+    background-color: rgb(28, 27, 27);
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    border-radius: 10%;
+  }
+  .form {
+    width: 50vh;
+  }
+  .startBtn1 {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 49%;
+  }
+  .active {
+    box-shadow: 0 0 300px rgb(178, 238, 182);
+  }
+  .fatherBody {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+  .pointList {
+    background-color: rgb(33, 62, 52);
+    width: 20%;
+    height: 400px;
+    margin-left: 3%;
+    margin-top: 8%;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  #namePlayer {
+    margin-left: 10px;
   }
   #green {
     background-color: rgb(0, 128, 0);
@@ -85,55 +122,11 @@
     margin-left: 3%;
     display: flex;
   }
-  .startBtn1 {
-    width: 100%;
-    margin-top: 25px;
-    margin-left: 49%;
-
-  }
   #startBtn {
     font-size: 30px;
     background-color: rgb(245, 222, 179);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
-  }
-  .active {
-    box-shadow: 0 0 300px rgb(178, 238, 182);
-  }
-  .fatherBody {
-    display: inline-flex;
-    width: 100%;
-    margin-top: 3%;
-    margin-bottom: 2%;
-  }
-  .pointList {
-    background-color: rgb(33, 62, 52);
-    width: 20%;
-    height: 400px;
-    margin-left: 3%;
-    margin-top: 8%;
-    text-align: center;
-  }
-  .footer {
-    text-align: center;
-  }
-  .footer a {
-    display: inline-block;
-    margin: 10px;
-    font-size: 20px;
-  }
-  /* Estilos para WEB de formulario*/
-  .formCenter {
-    display: flex;
-    width: 500px;
-    background-color: rgb(28, 27, 27);
-    align-items: center;
-    justify-content: center;
-    margin: 5% auto;
-    border-radius: 10%;
-  }
-  .form {
-    width: 50vh;
   }
   #mediumForm {
     border: 2px;
@@ -141,13 +134,19 @@
     font-size: 20px;
     display: block;
   }
-  #mediumForm button {
-    border: 2px;
-    display: flex;
-    margin: 5% auto;
+  .footer a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
   }
   #mediumForm div {
     align-items: center;
     margin: 5% 10%;
   }
+  #mediumForm button {
+    border: 2px;
+    display: flex;
+    margin: 5% auto;
+  }
+ 
 }
